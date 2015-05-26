@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yoyotrip"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />.
+        
+    <uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+        
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+                
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name=".FirstUsedActivity"
+            android:label="@string/title_activity_first_used" >
+            
+        </activity>
+        <activity
+            android:name=".Login1Activity"
+            android:label="@string/title_activity_login1" >
+        </activity>
+        <activity
+            android:name=".Login2Activity"
+            android:label="@string/title_activity_login2" >
+        </activity>
+        <activity
+            android:name=".Login3Activity"
+            android:label="@string/title_activity_login3" >
+        </activity>
+        <activity
+            android:name=".NavMainActivity"
+            android:label="@string/title_activity_nav_main" >
+        </activity>
+        <activity
+            android:name=".FragmentTabs"
+            android:label="@string/title_activity_fragment_tabs" >
+        </activity>
+    </application>
+
+</manifest>

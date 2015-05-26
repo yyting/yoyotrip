@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/aaa" >
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_in"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="                 密碼"
+        android:textColor="#BAD6F4" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/email_phone"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/icon" />
+
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="#00000000"
+        android:text="登入"
+        android:textColor="#007AFA" />
+
+    <Button
+        android:id="@+id/sign_up"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/sign_in"
+        android:background="#00000000"
+        android:text="立即申辦"
+        android:textColor="#FFEBEB" />
+
+    <EditText
+        android:id="@+id/email_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pwd"
+        android:layout_alignLeft="@+id/pwd"
+        android:ems="10"
+        android:hint="   電子郵件或手機號碼"
+        android:inputType="textEmailAddress"
+        android:textColor="#BAD6F4" />
+
+</RelativeLayout>
