@@ -1,0 +1,45 @@
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0"/>
+
+        <HorizontalScrollView
+            android:id="@+id/scroller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AFFEFF"
+            android:scrollbars="none" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                
+                android:orientation="horizontal" >
+
+            </TabWidget>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:id="@+id/realtabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </FrameLayout>
+
+    </LinearLayout>
+</TabHost>
+<!-- From: file:/C:/Users/Administrator/StudioProjects/yoyotrip/app/src/main/res/layout/fragment_tabs.xml -->
