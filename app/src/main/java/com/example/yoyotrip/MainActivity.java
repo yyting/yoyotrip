@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
 		login.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 
-				//µn¤J«á¤Á´«¨ì¥Dµe­±
+				//ï¿½nï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Dï¿½eï¿½ï¿½
 
 
 
@@ -67,7 +67,7 @@ public class MainActivity extends Activity {
 		Button sign_up=(Button)findViewById(R.id.sign_up);
 		sign_up.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				//µn¤J«á¤Á´«¨ìµù¥Uµe­±
+				//ï¿½nï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Uï¿½eï¿½ï¿½
 				Intent getmain = new Intent();
 				getmain.setClass(MainActivity.this, FirstUsedActivity.class);
 				startActivity(getmain);
@@ -79,13 +79,17 @@ public class MainActivity extends Activity {
 	}
 	
 class getlogin extends AsyncTask<String,Integer,Integer> {
+
 		protected void onPreExecute() {
 			final CharSequence strDialogTitle = getString(R.string.login_dialog_title);
 		    final CharSequence strDialogBody = getString(R.string.login_dialog_body);
             super.onPreExecute();
-			if (account.getText().equals("") || passwd.getText().equals("")) {
-
-
+			if ("".equals(account.getText().toString().trim()) || "".equals(passwd.getText().toString().trim())) {
+				Log.v ("123","nothing");
+				cancel(true);
+				toast = Toast.makeText(MainActivity.this,"è«‹è¼¸å…¥å¸³è™Ÿå¯†ç¢¼", toast.LENGTH_SHORT);
+				toast.setGravity(Gravity.CENTER | Gravity.CENTER, 0, 0);
+				toast.show();
 			}
 			if(toast!=null) {toast.show();}
             PDialog = ProgressDialog.show(MainActivity.this, strDialogTitle, strDialogBody, true);
@@ -104,6 +108,9 @@ class getlogin extends AsyncTask<String,Integer,Integer> {
 
 			 try
 			 {
+				 if (isCancelled()) {
+					 return null;
+				 }
 				 JSONObject status=new JSONObject(json.toString());
 				 Log.v("status", (String) status.get("status"));
 				 return status.getInt("status") ;
@@ -124,20 +131,26 @@ class getlogin extends AsyncTask<String,Integer,Integer> {
 			{
 				try {
 					Thread.sleep(2000);
+					PDialog.dismiss();
 					Intent getmain = new Intent();
 					getmain.setClass(MainActivity.this, FragmentTabs.class);
 					startActivity(getmain);
 					MainActivity.this.finish();
 				}catch(InterruptedException e){}
 			}else{
-				toast = Toast.makeText(MainActivity.this,"±b¸¹±K½X¿ù»~½Ğ­«·s¿é¤J", toast.LENGTH_SHORT);
+				PDialog.dismiss();
+				toast = Toast.makeText(MainActivity.this,"ç™»å…¥å¤±æ•—è«‹é‡æ–°è¼¸å…¥!", toast.LENGTH_SHORT);
 				toast.setGravity(Gravity.CENTER | Gravity.CENTER, 0, 0);
 				toast.show();
 				//toast.setText();
-			}
 
-			PDialog.dismiss();
+			}
         }
+		protected  void onCancelled(){
+			PDialog.dismiss();
+
+			super.onCancelled();
+		}
 		
 	}
 
