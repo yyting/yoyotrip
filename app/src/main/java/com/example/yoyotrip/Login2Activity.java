@@ -33,7 +33,7 @@ public class Login2Activity extends Activity {
 	private RadioButton female;
 	public JSONObject signup_info;
 	public JSONParser jsonparser=new JSONParser();
-	public String path=getResources().getString(R.string.sign_up_path);
+	public String path;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +44,7 @@ public class Login2Activity extends Activity {
 		male=(RadioButton)findViewById(R.id.male);
 		female=(RadioButton)findViewById(R.id.female);
 		imageButton2=((ImageButton)findViewById(R.id.imageButton2));
+		path=getResources().getString(R.string.sign_up_path);
 		final Bundle get_info=this.getIntent().getExtras();
 		
 		imageButton2.setOnClickListener(
@@ -61,23 +62,20 @@ public class Login2Activity extends Activity {
 							signup_info.put("name",last_name.getText().toString()+first_name.getText().toString());
 							signup_info.put("gender",gender);
 							Log.v("set_info", signup_info.toString());
+							new getsign_up().execute();
 						}
 						catch (JSONException e)
 						{
 
 						}
-						//µù¥U«á¤Á´«¨ì¥Dµe­±
-						Intent getmain=new Intent();
-						getmain.setClass(Login2Activity.this, Login3Activity.class);
-						startActivity(getmain);
-						Login2Activity.this.finish();
+
 				    }});
 		imageButton1=((ImageButton)findViewById(R.id.imageButton1));
 		imageButton1.setOnClickListener(
 				new OnClickListener() {
 				    public void onClick(View arg0) {
 
-				    	//µn¤J«á¤Á´«¨ì¥Dµe­±
+				    	//ï¿½nï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Dï¿½eï¿½ï¿½
 						Intent getmain=new Intent();
 						getmain.setClass(Login2Activity.this, Login1Activity.class);
 						startActivity(getmain);
@@ -86,37 +84,26 @@ public class Login2Activity extends Activity {
 				    }});
 	}
 
-	class getsign_up extends AsyncTask<String,String,String> {
+	class getsign_up extends AsyncTask<String,String,Integer> {
 
 		protected void onPreExecute() {
 			final CharSequence strDialogTitle = getString(R.string.login_dialog_title);
 			final CharSequence strDialogBody = getString(R.string.login_dialog_body);
 			super.onPreExecute();
-			PDialog = ProgressDialog.show(Login2Activity.this, "µù¥U¤¤½Ğµy«á", "¥¿¦b»P¦øªA¾¹¥æ´«¸ê°T...", true);
+			PDialog = ProgressDialog.show(Login2Activity.this, "è«‹ç¨å¾Œ", "æ­£åœ¨èˆ‡ä¼ºæœå™¨äº¤æ›è³‡è¨Š...", true);
 		}
 
-		protected String doInBackground(String... args) {
+		protected Integer doInBackground(String... args) {
 			//building parameters
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			params.add(new BasicNameValuePair("signup_info", signup_info.toString()));
 			JSONObject json = jsonparser.makeHttpRequest(path, "POST", params);
-			Log.d("Create Response", json.toString());
+			Log.d("Response", json.toString());
 
 			try {
 				JSONObject status = new JSONObject(json.toString());
 				Log.d("status", (String) status.get("status"));
-
-				if (status.getInt("status") == 1) {
-					Intent getmain = new Intent();
-					getmain.setClass(Login2Activity.this, FragmentTabs.class);
-					//Log.i("123","11111");
-					startActivity(getmain);
-					Login2Activity.this.finish();
-				} else {
-					Toast.makeText(Login2Activity.this, "Hello world!", Toast.LENGTH_LONG).show();
-
-
-				}
+				return status.getInt("status") ;
 
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -126,6 +113,34 @@ public class Login2Activity extends Activity {
 
 
 			return null;
+		}
+		protected void onPostExecute(Integer result) {
+			super.onPostExecute(result);
+			if(result==1)
+			{
+				try {
+					Thread.sleep(2000);
+					PDialog.dismiss();
+					Intent getmain=new Intent();
+					getmain.setClass(Login2Activity.this, Login3Activity.class);
+					startActivity(getmain);
+					Login2Activity.this.finish();
+				}catch(InterruptedException e){}
+			}else{
+				PDialog.dismiss();
+				PDialog = ProgressDialog.show(Login2Activity.this, "Waring", "è¨»å†Šå¤±æ•—è«‹é€£ç•¥ç®¡ç†å“¡", true);
+				try {
+					Thread.sleep(1000);
+					PDialog.dismiss();
+				}catch(InterruptedException e){}
+				//toast.setText();
+
+			}
+		}
+		protected  void onCancelled(){
+			PDialog.dismiss();
+
+			super.onCancelled();
 		}
 	}
 
