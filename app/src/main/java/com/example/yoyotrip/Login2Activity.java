@@ -13,7 +13,6 @@ import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
-import android.widget.Toast;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -95,15 +94,16 @@ public class Login2Activity extends Activity {
 
 		protected Integer doInBackground(String... args) {
 			//building parameters
+			int resp=0;
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
-			params.add(new BasicNameValuePair("signup_info", signup_info.toString()));
+			params.add(new BasicNameValuePair("set_info", signup_info.toString()));
 			JSONObject json = jsonparser.makeHttpRequest(path, "POST", params);
 			Log.d("Response", json.toString());
 
 			try {
 				JSONObject status = new JSONObject(json.toString());
 				Log.d("status", (String) status.get("status"));
-				return status.getInt("status") ;
+				resp =status.getInt("status") ;
 
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -112,13 +112,17 @@ public class Login2Activity extends Activity {
 			}
 
 
-			return null;
+			return resp;
 		}
 		protected void onPostExecute(Integer result) {
 			super.onPostExecute(result);
 			if(result==1)
 			{
 				try {
+
+					PDialog.setTitle("註冊成功!");
+					PDialog.setMessage("畫面將在2秒後跳轉...");
+					PDialog.show();
 					Thread.sleep(2000);
 					PDialog.dismiss();
 					Intent getmain=new Intent();
@@ -128,10 +132,12 @@ public class Login2Activity extends Activity {
 				}catch(InterruptedException e){}
 			}else{
 				PDialog.dismiss();
-				PDialog = ProgressDialog.show(Login2Activity.this, "Waring", "註冊失敗請連略管理員", true);
+
 				try {
-					Thread.sleep(1000);
+					PDialog = ProgressDialog.show(Login2Activity.this, "Waring", "註冊失敗請連略管理員", true);
+					Thread.sleep(5000);
 					PDialog.dismiss();
+
 				}catch(InterruptedException e){}
 				//toast.setText();
 
