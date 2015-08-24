@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.test.MapsActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#000000"
+            android:src="@drawable/abc_ic_ab_back_holo_dark" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="#000000"
+            android:text="      地圖介面"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#000000"
+            android:src="@android:drawable/ic_input_add" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#000000"
+            android:src="@android:drawable/ic_menu_set_as" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/a" />
+
+    <ImageButton
+        android:id="@+id/plane"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/game"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/group"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/group"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/pay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/pay"
+        android:visibility="invisible" />
+
+</LinearLayout>
