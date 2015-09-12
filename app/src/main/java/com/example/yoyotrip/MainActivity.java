@@ -14,7 +14,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,135 +22,110 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
+
+import com.example.yoyotrip.GCM.MagicLenGCM;
 
 public class MainActivity extends Activity {
 
 	public ProgressDialog PDialog = null;
-	public Toast toast;
+
 	public EditText account;
 	public EditText passwd;
 	public String path="";
 	JSONParser jsonParser=new JSONParser();
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE); 
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-		WindowManager.LayoutParams.FLAG_FULLSCREEN);
+				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_main);
-		
+
 		path=getResources().getString(R.string.login_path);
 		account=(EditText)findViewById(R.id.email_phone);
-		passwd=(EditText)findViewById(R.id.first_name);
+		passwd=(EditText)findViewById(R.id.pwd);
+		MagicLenGCM register = new MagicLenGCM(MainActivity.this);
+		Log.v("regid",register.getRegistrationId());
 
-		
-		Button login=(Button)findViewById(R.id.next);
-		login.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
+		Button button1=(Button)findViewById(R.id.date);
+		button1.setOnClickListener(new OnClickListener(){
+			public void onClick(View v){
 
-				//�n�J�������D�e��
-
-
-
-					new getlogin().execute();
-
-
-
-
-
+				//登入後切換到主畫面
+				new getlogin().execute();
 			}
 		});
-		
+
 		Button sign_up=(Button)findViewById(R.id.sign_up);
-		sign_up.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				//�n�J��������U�e��
-				Intent getmain = new Intent();
+		sign_up.setOnClickListener(new OnClickListener(){
+			public void onClick(View v){
+				//登入後切換到註冊畫面
+				Intent getmain=new Intent();
 				getmain.setClass(MainActivity.this, FirstUsedActivity.class);
 				startActivity(getmain);
 				MainActivity.this.finish();
 			}
 		});
-		
-		
+
+
 	}
-	
-class getlogin extends AsyncTask<String,Integer,Integer> {
+
+	class getlogin extends AsyncTask<String,String,String> {
 
 		protected void onPreExecute() {
 			final CharSequence strDialogTitle = getString(R.string.login_dialog_title);
-		    final CharSequence strDialogBody = getString(R.string.login_dialog_body);
-            super.onPreExecute();
-			if ("".equals(account.getText().toString().trim()) || "".equals(passwd.getText().toString().trim())) {
-				Log.v ("123","nothing");
-				cancel(true);
-				toast = Toast.makeText(MainActivity.this,"請輸入帳號密碼", toast.LENGTH_SHORT);
-				toast.setGravity(Gravity.CENTER | Gravity.CENTER, 0, 0);
-				toast.show();
-			}
-			if(toast!=null) {toast.show();}
-            PDialog = ProgressDialog.show(MainActivity.this, strDialogTitle, strDialogBody, true);
-        }
-		
-		protected Integer doInBackground(String... args){
+			final CharSequence strDialogBody = getString(R.string.login_dialog_body);
+			super.onPreExecute();
+			PDialog = ProgressDialog.show(MainActivity.this, strDialogTitle, strDialogBody, true);
+		}
+
+		protected String doInBackground(String... args){
 			String acc=account.getText().toString();
 			String pwd=passwd.getText().toString();
-			Log.v("acc", acc);
+			Log.v("acc",acc);
 			//building parameters
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			params.add(new BasicNameValuePair("acc",acc));
-			params.add(new BasicNameValuePair("pwd", pwd));
+			params.add(new BasicNameValuePair("pwd",pwd));
 			JSONObject json=jsonParser.makeHttpRequest(path,"POST",params);
-			Log.d("Create Response", json.toString());
+			Log.d("Create Response",json.toString());
 
-			 try
-			 {
-				 if (isCancelled()) {
-					 return null;
-				 }
-				 JSONObject status=new JSONObject(json.toString());
-				 Log.v("status", (String) status.get("status"));
-				 return status.getInt("status") ;
-			 }
-			 catch (JSONException e) {
-	                e.printStackTrace();
-	            }
-			 catch (Exception e) {
-	                // some code
-	            }
+			try {
+				JSONObject status=new JSONObject(json.toString());
+				Log.d("status",(String) status.get("status"));
+
+				if(status.getInt("status")==1)
+				{
+					Intent getmain=new Intent();
+					getmain.setClass(MainActivity.this,main.class);
+					//Log.i("123","11111");
+					startActivity(getmain);
+					MainActivity.this.finish();
+				}else{
+					Toast toast = Toast.makeText(MainActivity.this, "Hello world!", Toast.LENGTH_LONG);
+					toast.show();
+
+				}
+
+			}
+			catch (JSONException e) {
+				e.printStackTrace();
+			}
+			catch (Exception e) {
+				// some code
+			}
 
 
 			return null;
 		}
-		protected void onPostExecute(Integer result) {
-			super.onPostExecute(result);
-			if(result==1)
-			{
-				try {
-					Thread.sleep(2000);
-					PDialog.dismiss();
-					Intent getmain = new Intent();
-					getmain.setClass(MainActivity.this, FragmentTabs.class);
-					startActivity(getmain);
-					MainActivity.this.finish();
-				}catch(InterruptedException e){}
-			}else{
-				PDialog.dismiss();
-				toast = Toast.makeText(MainActivity.this,"登入失敗請重新輸入!", toast.LENGTH_SHORT);
-				toast.setGravity(Gravity.CENTER | Gravity.CENTER, 0, 0);
-				toast.show();
-				//toast.setText();
-
-			}
-        }
-		protected  void onCancelled(){
+		protected void onPostExecute(String file_url) {
+			// dismiss the dialog once done
 			PDialog.dismiss();
-
-			super.onCancelled();
 		}
-		
+
 	}
 
 	@Override

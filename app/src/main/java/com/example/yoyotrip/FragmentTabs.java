@@ -10,52 +10,52 @@ public class FragmentTabs extends FragmentActivity{
     private TabHost mTabHost;
     private TabManager mTabManager;
 
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
-        
-        
-        
+
+
+
+
         setContentView(R.layout.fragment_tabs);
         mTabHost = (TabHost)findViewById(android.R.id.tabhost);
         mTabHost.setup();
         mTabManager = new TabManager(this, mTabHost, R.id.realtabcontent);
-        mTabHost.setCurrentTab(0);//³]©w¤@¶}©l´N¸õ¨ì²Ä¤@­Ó¤À­¶
+        mTabHost.setCurrentTab(0);//è¨­å®šä¸€é–‹å§‹å°±è·³åˆ°ç¬¬ä¸€å€‹åˆ†é 
         
         
         /*mTabManager.addTab(
-            mTabHost.newTabSpec("Fragment1").setIndicator("µo¤å"),
+            mTabHost.newTabSpec("Fragment1").setIndicator("ç™¼æ–‡"),
             Fragment1.class, null);
         */
         mTabManager.addTab(
-            mTabHost.newTabSpec("Fragment2").setIndicator("²q²q§Ú¦b­þ?"),
-            Fragment2.class, null);
+                mTabHost.newTabSpec("Fragment2").setIndicator("çŒœçŒœæˆ‘åœ¨å“ª?"),
+                Fragment2.class, null);
         mTabManager.addTab(
-            mTabHost.newTabSpec("Fragment3").setIndicator("¥xÆWª¾ÃÑ¤ý"),
-            Fragment3.class, null);
+                mTabHost.newTabSpec("Fragment3").setIndicator("å°ç£çŸ¥è­˜çŽ‹"),
+                Fragment3.class, null);
 
-        
-        
-        DisplayMetrics dm = new DisplayMetrics();   
-        getWindowManager().getDefaultDisplay().getMetrics(dm); //¥ý¨ú±o¿Ã¹õ¸ÑªR«×  
-        int screenWidth = dm.widthPixels;   //¨ú±o¿Ã¹õªº¼e
-           
-           
-        TabWidget tabWidget = mTabHost.getTabWidget();   //¨ú±otabªºª«¥ó
-        int count = tabWidget.getChildCount();   //¨ú±otabªº¤À­¶¦³´X­Ó
-        if (count >= 2) {   
-            for (int i = 0; i < count; i++) {   
+
+
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm); //å…ˆå–å¾—èž¢å¹•è§£æžåº¦  
+        int screenWidth = dm.widthPixels;   //å–å¾—èž¢å¹•çš„å¯¬
+
+
+        TabWidget tabWidget = mTabHost.getTabWidget();   //å–å¾—tabçš„ç‰©ä»¶
+        int count = tabWidget.getChildCount();   //å–å¾—tabçš„åˆ†é æœ‰å¹¾å€‹
+        if (count >= 2) {
+            for (int i = 0; i < count; i++) {
                 tabWidget.getChildTabViewAt(i)
-                      .setMinimumWidth((screenWidth)/2);//³]©w¨C¤@­Ó¤À­¶³Ì¤pªº¼e«×   
-            }   
+                        .setMinimumWidth((screenWidth)/2);//è¨­å®šæ¯ä¸€å€‹åˆ†é æœ€å°çš„å¯¬åº¦
+            }
         }
-        
-        
-        
-        
-        
+
+
+
+
+
     }
 }
 

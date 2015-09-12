@@ -6,11 +6,41 @@
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="16" />
-.
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        android:targetSdkVersion="20" />
+
+    <!-- project_name:yoyotrip-1005 -->
+    <!-- 存取 internet -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- App receives GCM messages. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.example.yoyo_trip.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- 使用GCM -->
+    <uses-permission android:name="com.example.yoyo_trip.permission.C2D_MESSAGE" />
+    <!-- 照相機存取 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 手機震動 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 
     <application
         android:allowBackup="true"
@@ -20,11 +50,6 @@
         <activity
             android:name="com.example.yoyotrip.MainActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.example.yoyotrip.FirstUsedActivity"
@@ -43,6 +68,10 @@
             android:label="@string/title_activity_login3" >
         </activity>
         <activity
+            android:name="com.example.yoyotrip.Login4Activity"
+            android:label="@string/title_activity_login4" >
+        </activity>
+        <activity
             android:name="com.example.yoyotrip.NavMainActivity"
             android:label="@string/title_activity_nav_main" >
         </activity>
@@ -50,6 +79,91 @@
             android:name="com.example.yoyotrip.FragmentTabs"
             android:label="@string/title_activity_fragment_tabs" >
         </activity>
+        <activity
+            android:name="com.example.yoyotrip.main"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.MyActivity"
+            android:label="@string/title_activity_activity_my" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.SceneryActivity"
+            android:label="@string/title_activity_activity_scenery" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.SceneryOneActivity"
+            android:label="@string/title_activity_activity_scenery_one" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.PayStartActivity"
+            android:label="@string/title_activity_activity_paystart" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.TaskActivity"
+            android:label="@string/title_activity_activity_task" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.TaskPayStartActivity"
+            android:label="@string/title_activity_activity_taskpaystart" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.GiftActivity"
+            android:label="@string/title_activity_activity_gift" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.TaskDtailActivity"
+            android:label="@string/title_activity_activity_taskdtail" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.MyOneActivity"
+            android:label="@string/title_activity_activity_my_one" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.small"
+            android:label="@string/title_activity_small" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.tasksmall"
+            android:label="@string/title_activity_tasksmall" >
+        </activity>
+        <activity
+            android:name="com.example.yoyotrip.chatroom"
+            android:label="@string/title_activity_chatroom" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDZJbX6WeBJlyVgY6zO6L-wyo49MsmE2kw" />
+
+        <!-- GCM service -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- 接收 GCM 的 receiver -->
+        <receiver
+            android:name="com.example.yoyotrip.GCM.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.example.wilson.pushnotification" />
+            </intent-filter>
+        </receiver>
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
     </application>
 
 </manifest>

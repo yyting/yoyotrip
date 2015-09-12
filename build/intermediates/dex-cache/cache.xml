@@ -2,11 +2,193 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Administrator\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\jars\classes.jar"
         jumboMode="false"
-        revision="20.0.0"
-        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="C:\Users\Administrator\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-4b5a6ed7e9e22e88e5c55e2e8f15ad0f8f4e50c4.jar" />
+        revision="22.0.1"
+        sha1="c2ac04c5b232f6f0658ee4f1c13be09cd76406e2">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-3953def5409b177f864653c63a43e92a1f921182.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-6d89dd38a5ca28f2225dad977fda2f72fe629fe1.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-bfdf003ad059754e58f01c7e60b276ee0ee19bda.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-a3f223a258023ce68da3880b36abb35bbeec11d7.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="77a9dcb5f8b1dba36aacaa9c150eb0942dbea158">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-e1a902cbd9a21003dfd65cc146f92702c3b288dc.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-8ac2e9a158dc9c72d3dd74e8326c6a0869891a96.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-02289f26c608dd2f5bf239fd0245eb5285d8025c.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2e24e5f1b11170163028277de63f709e42525db4">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-253368f3b8e2ec9adc2069f0ea500232ec891ae7.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-7a7606fa5d74df0a90b6e0f6d240e12d4b741d8b.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-f49b192491c2e06067eace5dab6cb69b65e446d6.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-606843daba599b7971fccec2f9f68c05d4c378c4.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-cc007145b62459e5013cc4c3a0bbccbf15134d26.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-4a28be225c2418c3492c9e3a339526eefa2b16ee.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-b5cd7c8f2ccad9fe33d25dc5752fa3a4986cbf9d.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-ef48a0abf2c8d52e14e05da62ce14a565fb8090c.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-68e63b8e20baaaff561d74489fc3b7cc70489ef6.jar" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-87f5a75e1de9f212162c85b163eaa9811670bbdf.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-33da329a58764c977aff2e29cc9996387739b624.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-a946670018c4287f82ef5b2e7dcfd5ffdf98a749.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-ac160873410b02831624cebe725d500da0b3f1e0.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-f54a669a4007996116d06228b24765ab58cbc87d.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-24fd0a022b2c54ff53ff6c2f2f123d71e071a081.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-f932beb1762df9ef2f26eb2c7447d7766132608d.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-1d39a211e4a8ffdfd188b7c5f17c1334d26a7bbe.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4a135d56554069e5d0ff80e3220e887e57146ee5">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-9404f1dcb0689411fc14be110da79ec033b2aa50.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-f5f347e1d52454aca7fd70b30246abeb88f462aa.jar" />
+    </item>
+    <item
+        jar="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\pre-dexed\debug\classes-15b1b73055ecb5df60bd2a222e127e66629a822c.jar" />
     </item>
 
 </items>

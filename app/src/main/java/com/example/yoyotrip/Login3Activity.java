@@ -3,54 +3,57 @@ package com.example.yoyotrip;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RadioButton;
+import android.widget.ImageButton;
 
 public class Login3Activity extends Activity {
-	private Button sign_in;
+	private ImageButton imageButton1;
+	private ImageButton imageButton2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE); 
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+		WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.login3);
 		
-		sign_in=((Button)findViewById(R.id.next));
+		imageButton2=((ImageButton)findViewById(R.id.imageButton2));
 		
-		sign_in.setOnClickListener(new OnClickListener() {
+		
+		imageButton2.setOnClickListener(
+				new OnClickListener() {
 				    public void onClick(View arg0) {
 
-
-				    	//µn¤J«á¤Á´«¨ì¥Dµe­±
+						//ç™»å…¥å¾Œåˆ‡æ›åˆ°ä¸»ç•«é¢
 						Intent getmain=new Intent();
-						getmain.setClass(Login3Activity.this, FragmentTabs.class);
+						getmain.setClass(Login3Activity.this, Login4Activity.class);
+						startActivity(getmain);
+						Login3Activity.this.finish();
+				  
+				    }});
+		
+		imageButton1=((ImageButton)findViewById(R.id.imageButton1));
+		
+		
+		imageButton1.setOnClickListener(
+				new OnClickListener() {
+				    public void onClick(View arg0) {
+
+				    	//ï¿½nï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Dï¿½eï¿½ï¿½
+						Intent getmain=new Intent();
+						getmain.setClass(Login3Activity.this, Login2Activity.class);
 						startActivity(getmain);
 						Login3Activity.this.finish();
 				  
 				    }}); 
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.login3, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
+	
 }

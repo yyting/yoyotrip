@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bbb"
+    android:background="@drawable/login_background"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -35,7 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="基本資料"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0080FF" />
 
     <TextView
         android:id="@+id/textView5"
@@ -61,10 +62,17 @@
             android:text="               " />
 
         <EditText
-            android:layout_width="96dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/last_name"
-            android:hint="姓氏" />
+            android:id="@+id/first_name"
+            android:layout_width="98dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white1"
+            android:ems="10"
+            android:hint="姓氏"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
 
         <TextView
             android:id="@+id/textView6"
@@ -73,9 +81,10 @@
             android:text="    " />
 
         <EditText
-            android:id="@+id/first_name"
+            android:id="@+id/last_name"
             android:layout_width="96dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/white1"
             android:ems="10"
             android:hint="名字"
             android:inputType="textPersonName" />
@@ -101,62 +110,35 @@
         android:text=" " />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/white1" >
 
         <TextView
-            android:id="@+id/TextView06"
+            android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="    " />
+            android:hint="生日"
+            android:paddingLeft="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#0080FF"
+            android:textSize="20dp" />
 
-        <RadioGroup
-            android:id="@+id/radioGroup1"
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/date"
+            style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal" >
-
-            <RadioButton
-                android:id="@+id/male"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text=" " />
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/boy" />
-
-            <RadioButton
-                android:id="@+id/female"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" " />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/girl" />
-
-        </RadioGroup>
+            android:alpha="0.7"
+            android:text="選擇" />
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" " />
-
-    <TextView
-        android:id="@+id/TextView01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" " />
 
     <TextView
         android:id="@+id/textView12"
@@ -165,8 +147,117 @@
         android:text=" " />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/white1" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="性別"
+            android:paddingLeft="50dp"
+            android:paddingRight="30dp"
+            android:paddingTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#0080FF"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女" />
+
+            </LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text=" " />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/white1" >
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="身份證字號/護照"
+            android:paddingLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#0080FF"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView11"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=" " />
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="使用真實身份證，系統將會同步認證提高安全性" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/TextView09"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:text=" " />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
         android:layout_gravity="center"
         android:orientation="vertical" >
 
@@ -182,24 +273,22 @@
 
             <ImageButton
                 android:id="@+id/imageButton1"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/upstep" />
 
             <TextView
-                android:id="@+id/TextView05"
-                android:layout_width="wrap_content"
+                android:id="@+id/TextView08"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:text="                              " />
+                android:text="                             " />
 
             <ImageButton
                 android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/nextstep" />
-
         </LinearLayout>
-
     </LinearLayout>
 
 </LinearLayout>

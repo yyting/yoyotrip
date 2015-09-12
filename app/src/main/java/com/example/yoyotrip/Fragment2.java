@@ -17,7 +17,7 @@ import android.widget.ImageButton;
 
 
 public class Fragment2 extends Fragment {
-	//宣告
+
 	private View v;
 	private DisplayMetrics mPhone;
 	private ImageButton camera;
@@ -37,7 +37,7 @@ public class Fragment2 extends Fragment {
         Bundle savedInstanceState) {
         // TODO Auto-generated method stub
     	
-    	//讀取手機解析度
+
 	      mPhone = new DisplayMetrics();
 	      getActivity().getWindowManager().getDefaultDisplay().getMetrics(mPhone);
     	
@@ -50,8 +50,7 @@ public class Fragment2 extends Fragment {
     	camera.setOnClickListener(new OnClickListener(){
 			public void onClick(View v)
 			{
-				//開啟相機功能，並將拍照後的圖片存入SD卡相片集內，須由startActivityForResult且帶入
-		         //requestCode進行呼叫，原因為拍照完畢後返回程式後則呼叫onActivityResult
+
 		         ContentValues value = new ContentValues();
 		         value.put(Media.MIME_TYPE, "image/jpeg");                                      
 		         Uri uri= getActivity().getContentResolver().insert(Media.EXTERNAL_CONTENT_URI,
@@ -67,8 +66,7 @@ public class Fragment2 extends Fragment {
 	         @Override
 	         public void onClick(View v) 
 	         {
-	         //開啟相簿相片集，須由startActivityForResult且帶入requestCode進行呼叫，原因
-	         //為點選相片後返回程式呼叫onActivityResult
+
 	         Intent intent = new Intent();
 	         intent.setType("image/*");
 	         intent.setAction(Intent.ACTION_GET_CONTENT);
