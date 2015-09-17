@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +15,8 @@ import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.example.yoyotrip.GCM.MagicLenGCM;
 
 public class main extends Activity{
 
@@ -39,7 +42,10 @@ public class main extends Activity{
 		WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.main);
 
-
+		MagicLenGCM register = new MagicLenGCM(main.this);
+		/**@檢查GCM狀態*/
+		register.openGCM();
+		Log.i("regid", register.getRegistrationId() + "");
 
 		Button Button03=(Button)findViewById(R.id.Button03);
 

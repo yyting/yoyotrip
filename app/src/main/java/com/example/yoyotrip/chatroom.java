@@ -25,9 +25,9 @@ import com.example.yoyotrip.chat.Option;
 public class chatroom extends ActionBarActivity {
 
     private MessageInputToolBox box;
-    private ListView 			listView;
-    private MessageAdapter 		adapter;
-
+    public ListView 			listView;
+    public MessageAdapter 		adapter;
+    public List<Message> messages ;
     @SuppressLint("UseSparseArrays")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,7 @@ public class chatroom extends ActionBarActivity {
      * init MessageInputToolBox
      */
     @SuppressLint("ShowToast")
-    private void initMessageInputToolBox(){
+    public void initMessageInputToolBox(){
             box = (MessageInputToolBox) findViewById(R.id.messageInputToolBox);
         box.setOnOperationListener(new OnOperationListener() {
 
@@ -52,16 +52,15 @@ public class chatroom extends ActionBarActivity {
             public void send(String content) {
 
                 System.out.println("===============" + content);
-
-                Message message = new Message(0, 1, "Tom", "avatar", "Jerry", "avatar", content, true, true, new Date());
-
-
+                int rd=(int)(Math.random()*99)+1;
+                Message message = new Message(0, 1, rd%2==1?"Tom":"helen", "avatar", "Jerry", "avatar", content, true, true, new Date());
                 adapter.getData().add(message);
                 listView.setSelection(listView.getBottom());
 
                 //Just demo
                 createReplayMsg(message);
             }
+
 
             @Override
             public void selectedFace(String content) {
@@ -140,24 +139,24 @@ public class chatroom extends ActionBarActivity {
         listView = (ListView) findViewById(R.id.messageListview);
 
         //create Data
-        Message message = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "Hi", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 8));
-        Message message1 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "Hello World", true, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24)* 8));
-        Message message2 = new Message(Message.MSG_TYPE_PHOTO, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "device_2014_08_21_215311", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 7));
-        Message message3 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "Haha", true, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 7));
-        Message message4 = new Message(Message.MSG_TYPE_FACE, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "big3", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 7));
-        Message message5 = new Message(Message.MSG_TYPE_FACE, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "big2", true, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
-        Message message6 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_FAIL, "Tom", "avatar", "Jerry", "avatar", "test send fail", true, false, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
-        Message message7 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SENDING, "Tom", "avatar", "Jerry", "avatar", "test sending", true, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
+        Message message = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "Hi，大家好我是你們的導遊", true, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 8));
+        Message message1 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "Hello", false ,true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24)* 8));
+        Message message2 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "helen", "avatar", "Jerry", "avatar", "我們要在哪集合??", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 7));
+        Message message3 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "台北車站嗎!?", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 7));
+        Message message4 = new Message(Message.MSG_TYPE_FACE, Message.MSG_STATE_SUCCESS, "Joe", "avatar", "Jerry", "avatar", "big3", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
+        Message message5 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Joe", "avatar", "Jerry", "avatar", "可以在229公園那邊嗎?", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
+//        Message message6 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_FAIL, "Tom", "avatar", "Jerry", "avatar", "test send fail", true, false, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
+//        Message message7 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SENDING, "Tom", "avatar", "Jerry", "avatar", "test sending", true, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
 
-        List<Message> messages = new ArrayList<Message>();
+        messages = new ArrayList<Message>();
         messages.add(message);
         messages.add(message1);
         messages.add(message2);
         messages.add(message3);
         messages.add(message4);
         messages.add(message5);
-        messages.add(message6);
-        messages.add(message7);
+//        messages.add(message6);
+//        messages.add(message7);
 
         adapter = new MessageAdapter(this, messages);
         listView.setAdapter(adapter);
@@ -174,12 +173,13 @@ public class chatroom extends ActionBarActivity {
     }
 
     //Re:採串接GCM，聊天室完成
-    private void createReplayMsg(Message message){
+    public void createReplayMsg(final Message message){
 
-        final Message reMessage = new Message(message.getType(), 1, "Tom", "avatar", "Jerry", "avatar",
+        final Message reMessage = new Message(message.getType(), 1, message.getFromUserName(), "avatar", "Jerry", "avatar",
                 message.getType() == 0 ? "Re:" + message.getContent() : message.getContent(),
                 false, true, new Date()
         );
+
         new Thread(new Runnable() {
 
             @Override
@@ -191,6 +191,7 @@ public class chatroom extends ActionBarActivity {
                         @Override
                         public void run() {
                             adapter.getData().add(reMessage);
+                            adapter.notifyDataSetChanged();
                             listView.setSelection(listView.getBottom());
                         }
                     });
