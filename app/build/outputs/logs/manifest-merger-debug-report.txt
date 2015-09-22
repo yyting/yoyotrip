@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:2:1-180:12
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:2:1-184:12
 	xmlns:android
 		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:2:11-69
 	package
@@ -104,7 +104,7 @@ ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:30:26-80
 application
-ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:33:9-179:23
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:33:9-183:23
 MERGED from [com.google.android.gms:play-services:7.8.0] C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\7.8.0\AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:24:5-32:19
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
@@ -337,27 +337,37 @@ ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:149:17-42
 activity#com.example.yoyotrip.chatroom
-ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:153:13-158:24
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:153:13-161:24
 	android:label
 		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:155:17-64
 	android:theme
 		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:156:17-73
 	android:name
 		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:154:17-41
+intent-filter#android.intent.category.DEFAULT+com.example.yoyotrip.intent.action.createview
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:157:17-160:33
+action#com.example.yoyotrip.intent.action.createview
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:158:21-91
+	android:name
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:158:29-89
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:159:21-80
+	android:name
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:159:31-77
 activity#com.example.yoyotrip.MapActivity
-ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:159:13-163:24
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:162:13-166:24
 	android:label
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:161:17-68
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:164:17-68
 	android:name
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:160:17-44
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:163:17-44
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:164:13-166:75
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:167:13-169:75
 	android:name
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:165:17-66
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:168:17-66
 	android:value
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:166:17-72
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:169:17-72
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:169:13-170:73
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:172:13-173:73
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
@@ -388,29 +398,29 @@ MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\colm\Stud
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
 	android:name
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:169:24-69
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:172:24-69
 	android:value
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:170:17-70
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:173:17-70
 receiver#com.example.yoyotrip.GCM.GcmBroadcastReceiver
-ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:172:13-178:24
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:175:13-181:24
 	android:permission
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:172:64-124
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:175:64-124
 	android:name
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:172:23-63
-intent-filter#com.example.wilson.pushnotification+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:173:17-177:33
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:175:23-63
+intent-filter#com.example.yoyotrip.pushnotification+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:176:17-180:33
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:174:21-85
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:177:21-85
 	android:name
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:174:29-82
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:177:29-82
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:175:21-90
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:178:21-90
 	android:name
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:175:29-87
-category#com.example.wilson.pushnotification
-ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:176:21-84
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:178:29-87
+category#com.example.yoyotrip.pushnotification
+ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:179:21-86
 	android:name
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:176:31-81
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:179:31-83
 uses-sdk
 INJECTED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.android.gms:play-services:7.8.0] C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\7.8.0\AndroidManifest.xml:18:5-42
@@ -526,7 +536,7 @@ ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\colm\Studio
 	android:name
 		ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:30:19-91
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:2:1-180:12 reason: com.google.android.gms.maps requested WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:2:1-184:12 reason: com.google.android.gms.maps requested WRITE_EXTERNAL_STORAGE
 uses-permission#android.permission.USE_CREDENTIALS
 ADDED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\AndroidManifest.xml:22:5-73
 	android:name

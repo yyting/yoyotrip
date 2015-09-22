@@ -1,15 +1,17 @@
 package com.example.yoyotrip;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -28,6 +30,7 @@ public class chatroom extends ActionBarActivity {
     public ListView 			listView;
     public MessageAdapter 		adapter;
     public List<Message> messages ;
+    public Serializable msg=null;
     @SuppressLint("UseSparseArrays")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,12 @@ public class chatroom extends ActionBarActivity {
         initMessageInputToolBox();
 
         initListView();
+        if (getIntent()!=null)
+        {
+
+//            createReplayMsg();
+        }
+
     }
 
     /**
@@ -52,8 +61,8 @@ public class chatroom extends ActionBarActivity {
             public void send(String content) {
 
                 System.out.println("===============" + content);
-                int rd=(int)(Math.random()*99)+1;
-                Message message = new Message(0, 1, rd%2==1?"Tom":"helen", "avatar", "Jerry", "avatar", content, true, true, new Date());
+                int rd = (int) (Math.random() * 99) + 1;
+                Message message = new Message(0, 1, rd % 2 == 1 ? "Tom" : "helen", "avatar", "Jerry", "avatar", content, true, true, new Date());
                 adapter.getData().add(message);
                 listView.setSelection(listView.getBottom());
 
@@ -91,7 +100,7 @@ public class chatroom extends ActionBarActivity {
                     default:
                         break;
                 }
-                Toast.makeText(chatroom.this, "Do some thing here, index :" +index, Toast.LENGTH_LONG).show();
+                Toast.makeText(chatroom.this, "Do some thing here, index :" + index, Toast.LENGTH_LONG).show();
 
             }
 
@@ -159,6 +168,7 @@ public class chatroom extends ActionBarActivity {
 //        messages.add(message7);
 
         adapter = new MessageAdapter(this, messages);
+        System.out.println("Data+++"+adapter.getData());
         listView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
@@ -173,33 +183,36 @@ public class chatroom extends ActionBarActivity {
     }
 
     //Re:採串接GCM，聊天室完成
-    public void createReplayMsg(final Message message){
+    public void createReplayMsg(Message message){
 
         final Message reMessage = new Message(message.getType(), 1, message.getFromUserName(), "avatar", "Jerry", "avatar",
                 message.getType() == 0 ? "Re:" + message.getContent() : message.getContent(),
                 false, true, new Date()
         );
 
-        new Thread(new Runnable() {
+//        new Thread(new Runnable() {
 
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(1000 * (new Random().nextInt(3) +1));
-                    runOnUiThread(new Runnable() {
+//            @Override
+//            public void run() {
+//                try {
+//                    //Thread.sleep(1000 * (new Random().nextInt(3) +1));
+//                    runOnUiThread(new Runnable() {
+//
+//                        @Override
+//                        public void run() {
+                            msg=getIntent().getSerializableExtra("msg");
+                            adapter.getData().add((Message) msg);
 
-                        @Override
-                        public void run() {
-                            adapter.getData().add(reMessage);
                             adapter.notifyDataSetChanged();
                             listView.setSelection(listView.getBottom());
-                        }
-                    });
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }).start();
+//                        }
+//                    });
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }).start();
+
     }
 
 }

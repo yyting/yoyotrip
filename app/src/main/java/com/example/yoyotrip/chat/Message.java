@@ -1,8 +1,9 @@
 package com.example.yoyotrip.chat;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Message {
+public class Message implements Serializable {
 	public final static int MSG_TYPE_TEXT 	= 0;
 	public final static int MSG_TYPE_PHOTO 	= 1;
 	public final static int MSG_TYPE_FACE 	= 2;
@@ -127,5 +128,6 @@ public class Message {
 	public void setTime(Date time) {
 		this.time = time;
 	}
+
 
 }

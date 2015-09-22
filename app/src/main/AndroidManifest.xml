@@ -154,7 +154,10 @@
                 android:name=".chatroom"
                 android:label="@string/title_activity_chatroom"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
+                <intent-filter>
+                    <action android:name="com.example.yoyotrip.intent.action.createview"/>
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
             </activity>
             <activity
                 android:name=".MapActivity"
@@ -173,8 +176,9 @@
                 <intent-filter>
                     <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                     <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-                    <category android:name="com.example.wilson.pushnotification" />
+                    <category android:name="com.example.yoyotrip.pushnotification" />
                 </intent-filter>
             </receiver>
+
         </application>
 </manifest>

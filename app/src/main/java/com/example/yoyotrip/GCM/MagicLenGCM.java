@@ -117,6 +117,7 @@ public class MagicLenGCM {
         /**隱藏超過notifymax以前的通知**/
         if(notifynum>notifymax){mNotificationManager.cancel(notifynum-(notifymax+1));}
     }
+    //呼叫createMsg
 
     // ----------物件變數----------
     private Activity activity;
