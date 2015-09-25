@@ -10,120 +10,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05c0361f-6552-409e-a587-9ec6a6f03490" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\classes\debug\com\example\yoyotrip\chatroom$3$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\classes\debug\com\example\yoyotrip\chatroom$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\incremental\mergeResources\androidTest\debug\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\incremental\mergeResources\debug\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\manifests\androidTest\debug\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\a.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\aaa.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\abc.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\bbb.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\boy.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\camara.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\camara1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\drawer_shadow.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\fb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\girl.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\ic_drawer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\icon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\location.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\next.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\next1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\nextstep.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\photo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\re.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\upstep.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-hdpi-v4\xinsrc_57207050310336871119727.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-mdpi-v4\drawer_shadow.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-mdpi-v4\ic_drawer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-mdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-xhdpi-v4\drawer_shadow.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-xhdpi-v4\ic_drawer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-xhdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-xxhdpi-v4\drawer_shadow.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-xxhdpi-v4\ic_drawer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\drawable-xxhdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\layout\activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\layout\first_used.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\layout\fragment_tabs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\layout\grid_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\layout\listview1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\layout\listview2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\layout\listview3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\layout\login1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\layout\login2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\layout\login3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\layout\nav_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\menu\first_used.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\menu\global.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\menu\login1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\menu\login2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\menu\login3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\menu\main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\menu\nav_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\values-v11\values-v11.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\values-v14\values-v14.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\values-w820dp-v13\values-w820dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\res\debug\values\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\resources\resources-debug-androidTest.ap_" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\colm\StudioProjects\yoyotrip\app\build\intermediates\resources\resources-debug.ap_" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/GCM/GcmBroadcastReceiver.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/GCM/GcmBroadcastReceiver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/GCM/MagicLenGCM$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/GCM/MagicLenGCM$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/GCM/MagicLenGCM$AsyncTaskRegister.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/GCM/MagicLenGCM$AsyncTaskRegister.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/GCM/MagicLenGCM.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/GCM/MagicLenGCM.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/chat/Message.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/chat/Message.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/chatfrom_bg_focused.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/chatfrom_bg_focused.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatfrom_bg_focused.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatfrom_bg_focused.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/chatfrom_bg_normal.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/chatfrom_bg_normal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatfrom_bg_normal.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatfrom_bg_normal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/chatfrom_bg_pressed.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/chatfrom_bg_pressed.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatfrom_bg_pressed.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatfrom_bg_pressed.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/chatroom$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/chatroom$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/chatroom$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/chatroom$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/chatroom.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/yoyotrip/chatroom.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-15b1b73055ecb5df60bd2a222e127e66629a822c.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-15b1b73055ecb5df60bd2a222e127e66629a822c.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-1d39a211e4a8ffdfd188b7c5f17c1334d26a7bbe.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-1d39a211e4a8ffdfd188b7c5f17c1334d26a7bbe.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-24fd0a022b2c54ff53ff6c2f2f123d71e071a081.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-24fd0a022b2c54ff53ff6c2f2f123d71e071a081.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-253368f3b8e2ec9adc2069f0ea500232ec891ae7.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-253368f3b8e2ec9adc2069f0ea500232ec891ae7.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-33da329a58764c977aff2e29cc9996387739b624.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-33da329a58764c977aff2e29cc9996387739b624.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-3953def5409b177f864653c63a43e92a1f921182.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-3953def5409b177f864653c63a43e92a1f921182.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-4a28be225c2418c3492c9e3a339526eefa2b16ee.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-4a28be225c2418c3492c9e3a339526eefa2b16ee.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-606843daba599b7971fccec2f9f68c05d4c378c4.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-606843daba599b7971fccec2f9f68c05d4c378c4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-68e63b8e20baaaff561d74489fc3b7cc70489ef6.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-68e63b8e20baaaff561d74489fc3b7cc70489ef6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-6d89dd38a5ca28f2225dad977fda2f72fe629fe1.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-6d89dd38a5ca28f2225dad977fda2f72fe629fe1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-7a7606fa5d74df0a90b6e0f6d240e12d4b741d8b.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-7a7606fa5d74df0a90b6e0f6d240e12d4b741d8b.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-9404f1dcb0689411fc14be110da79ec033b2aa50.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-9404f1dcb0689411fc14be110da79ec033b2aa50.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-a3f223a258023ce68da3880b36abb35bbeec11d7.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-a3f223a258023ce68da3880b36abb35bbeec11d7.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-a946670018c4287f82ef5b2e7dcfd5ffdf98a749.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-a946670018c4287f82ef5b2e7dcfd5ffdf98a749.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-ac160873410b02831624cebe725d500da0b3f1e0.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-ac160873410b02831624cebe725d500da0b3f1e0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-b5cd7c8f2ccad9fe33d25dc5752fa3a4986cbf9d.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-b5cd7c8f2ccad9fe33d25dc5752fa3a4986cbf9d.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-bfdf003ad059754e58f01c7e60b276ee0ee19bda.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-bfdf003ad059754e58f01c7e60b276ee0ee19bda.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-cc007145b62459e5013cc4c3a0bbccbf15134d26.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-cc007145b62459e5013cc4c3a0bbccbf15134d26.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-e1a902cbd9a21003dfd65cc146f92702c3b288dc.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-e1a902cbd9a21003dfd65cc146f92702c3b288dc.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-ef48a0abf2c8d52e14e05da62ce14a565fb8090c.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-ef48a0abf2c8d52e14e05da62ce14a565fb8090c.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-f49b192491c2e06067eace5dab6cb69b65e446d6.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-f49b192491c2e06067eace5dab6cb69b65e446d6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-f54a669a4007996116d06228b24765ab58cbc87d.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-f54a669a4007996116d06228b24765ab58cbc87d.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-f5f347e1d52454aca7fd70b30246abeb88f462aa.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-f5f347e1d52454aca7fd70b30246abeb88f462aa.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-f932beb1762df9ef2f26eb2c7447d7766132608d.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-f932beb1762df9ef2f26eb2c7447d7766132608d.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/chatto_bg_focused.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/chatto_bg_focused.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatto_bg_focused.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatto_bg_focused.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/chatto_bg_pressed.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi/chatto_bg_pressed.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatto_bg_pressed.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/chatto_bg_pressed.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-02289f26c608dd2f5bf239fd0245eb5285d8025c.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-02289f26c608dd2f5bf239fd0245eb5285d8025c.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-8ac2e9a158dc9c72d3dd74e8326c6a0869891a96.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-8ac2e9a158dc9c72d3dd74e8326c6a0869891a96.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-87f5a75e1de9f212162c85b163eaa9811670bbdf.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-87f5a75e1de9f212162c85b163eaa9811670bbdf.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/GCM/GcmBroadcastReceiver.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/GCM/GcmBroadcastReceiver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/GCM/MagicLenGCM.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/GCM/MagicLenGCM.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chat/Message.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chat/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chatroom.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chatroom.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/chatroom.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/chatroom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/chatroom.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/chatroom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResourcesdebug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResourcesdebug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/msg_item_right.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/msg_item_right.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/msg_item_right.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/msg_item_right.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="yoyotrip.iws" />
@@ -156,7 +73,71 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chatroom.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="e#7719#8381#0" expanded="true" />
+                <element signature="e#7919#8256#0" expanded="true" />
+                <element signature="e#8255#8256#0" expanded="true" />
+                <element signature="e#8380#8381#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="msg_item_left.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/msg_item_left.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chatroom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/chatroom.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageInputToolBox.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chat/MessageInputToolBox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="78" column="43" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_map.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_map.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,33 +146,10 @@
       <file leaf-file-name="GcmBroadcastReceiver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/GCM/GcmBroadcastReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5241935">
-              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.69320387">
+              <caret line="81" column="77" selection-start-line="81" selection-start-column="77" selection-end-line="81" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="173" column="38" selection-start-line="173" selection-start-column="38" selection-end-line="173" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Instrumentation.java" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Android/sdk/sources/android-21/android/app/Instrumentation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1106" column="0" selection-start-line="1106" selection-start-column="0" selection-end-line="1106" selection-end-column="0" />
-              <folding>
-                <element signature="e#6335#6336#0" expanded="true" />
-                <element signature="e#6363#6364#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,7 +159,7 @@
         <entry file="file://D:/Android/sdk/sources/android-21/android/app/ActivityThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2273" column="44" selection-start-line="2273" selection-start-column="44" selection-end-line="2273" selection-end-column="44" />
+              <caret line="2249" column="16" selection-start-line="2249" selection-start-column="16" selection-end-line="2249" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -1807,7 +1765,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/Login2Activity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/chatroom.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/main.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chat/createMsg.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/GCM/GcmIntentService.java" />
@@ -1815,8 +1772,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chat/Message.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/GCM/MagicLenGCM.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chatroom.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/GCM/GcmBroadcastReceiver.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chatroom.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/msg_item_right.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/chatroom.xml" />
       </list>
     </option>
   </component>
@@ -1859,6 +1818,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1880,13 +1840,84 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yoyotrip" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yoyotrip" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yoyotrip" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yoyotrip" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yoyotrip" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yoyotrip" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2097,7 +2128,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442510442709</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add catch GCM call chatroom intent &#10;next chatroom get intent.getExarts(); call createReplayMsg">
+      <created>1442910237175</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1442910237175</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2115,28 +2152,28 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41536748" sideWeight="0.47707888" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55011135" sideWeight="0.47707888" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41536748" sideWeight="0.5229211" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24954017" sideWeight="0.50749063" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24954017" sideWeight="0.50749063" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32516703" sideWeight="0.48880598" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5233853" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39420936" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21588486" sideWeight="0.49250937" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32293987" sideWeight="0.48454157" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32182628" sideWeight="0.48454157" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2156,7 +2193,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change createReplayMsg Resource from GCM" />
-    <option name="LAST_COMMIT_MESSAGE" value="change createReplayMsg Resource from GCM" />
+    <MESSAGE value="add catch GCM call chatroom intent &#10;next chatroom get intent.getExarts(); call createReplayMsg" />
+    <option name="LAST_COMMIT_MESSAGE" value="add catch GCM call chatroom intent &#10;next chatroom get intent.getExarts(); call createReplayMsg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2167,57 +2205,15 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chatroom.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chatroom.java</url>
-          <line>186</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="56" />
+      <option name="time" value="68" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chatroom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/Login2Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="65" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="149" column="38" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/Login4Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2227,13 +2223,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login4.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/Login3Activity.java">
@@ -2251,41 +2247,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/face_fragment.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/chatroom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13148789">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/Login4Activity.java">
@@ -2307,7 +2292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5045593">
           <caret line="1989" column="0" selection-start-line="1989" selection-start-column="0" selection-end-line="1989" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2315,7 +2299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0547112">
           <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2365,20 +2348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33274022">
           <caret line="19749" column="0" selection-start-line="19749" selection-start-column="0" selection-end-line="19749" selection-end-column="0" />
-          <folding>
-            <element signature="e#767478#767479#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chat/MessageInputToolBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7110266">
-          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding>
-            <element signature="e#4576#4899#0" expanded="false" />
-            <element signature="e#4898#4899#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2386,7 +2355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.571429">
           <caret line="143" column="22" selection-start-line="143" selection-start-column="22" selection-end-line="143" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2394,13 +2362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1472#1473#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
-            <element signature="e#2692#2693#0" expanded="true" />
-            <element signature="e#2715#2716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2415,9 +2376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-          <folding>
-            <element signature="e#8012#8013#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2425,7 +2383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2448,10 +2405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="366" column="0" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
-          <folding>
-            <element signature="e#32107#32108#0" expanded="false" />
-            <element signature="e#32144#32145#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2459,7 +2412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2467,15 +2419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="145" column="60" selection-start-line="145" selection-start-column="60" selection-end-line="145" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-21/android/app/ActivityTransitionState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14112903">
-          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2483,33 +2426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-21/android/system/Os.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-21/android/app/ContextImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="807" column="0" selection-start-line="807" selection-start-column="0" selection-end-line="807" selection-end-column="0" />
-          <folding>
-            <element signature="e#34011#34012#0" expanded="false" />
-            <element signature="e#90745#90746#0" expanded="false" />
-            <element signature="e#90781#90782#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-21/android/content/ContextWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326613">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2517,10 +2433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3326613">
           <caret line="2823" column="0" selection-start-line="2823" selection-start-column="0" selection-end-line="2823" selection-end-column="0" />
-          <folding>
-            <element signature="e#2619#2620#0" expanded="false" />
-            <element signature="e#2656#2657#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2531,22 +2443,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Android/sdk/sources/android-21/android/content/Intent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326613">
-          <caret line="4560" column="0" selection-start-line="4560" selection-start-column="0" selection-end-line="4560" selection-end-column="0" />
-          <folding>
-            <element signature="e#211491#211492#0" expanded="true" />
-            <element signature="e#211530#211531#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Android/sdk/sources/android-21/android/os/Bundle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3326613">
           <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2554,16 +2454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3326613">
           <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
-          <folding>
-            <element signature="e#7028#7029#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-21/android/os/Process.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326613">
-          <caret line="760" column="0" selection-start-line="760" selection-start-column="0" selection-end-line="760" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2575,29 +2465,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Android/sdk/sources/android-21/android/app/Activity.java">
+    <entry file="file://D:/Android/sdk/sources/android-21/android/content/ContextWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5939" column="0" selection-start-line="5939" selection-start-column="0" selection-end-line="5939" selection-end-column="0" />
+          <caret line="321" column="0" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+          <folding>
+            <element signature="e#7924#7925#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/sdk/sources/android-21/android/system/Os.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Android/sdk/sources/android-21/android/app/Instrumentation.java">
+    <entry file="file://D:/Android/sdk/sources/android-21/android/os/Process.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1106" column="0" selection-start-line="1106" selection-start-column="0" selection-end-line="1106" selection-end-column="0" />
+          <caret line="760" column="0" selection-start-line="760" selection-start-column="0" selection-end-line="760" selection-end-column="0" />
           <folding>
-            <element signature="e#6335#6336#0" expanded="true" />
-            <element signature="e#6363#6364#0" expanded="true" />
+            <element signature="e#26338#26339#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/sdk/sources/android-21/android/content/Intent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5152" column="0" selection-start-line="5152" selection-start-column="0" selection-end-line="5152" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/sdk/sources/android-21/android/app/ContextImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1236" column="0" selection-start-line="1236" selection-start-column="0" selection-end-line="1236" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/sdk/sources/android-21/android/app/ActivityTransitionState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/Android/sdk/sources/android-21/android/app/ActivityThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2273" column="44" selection-start-line="2273" selection-start-column="44" selection-end-line="2273" selection-end-column="44" />
+          <caret line="2249" column="16" selection-start-line="2249" selection-start-column="16" selection-end-line="2249" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/sdk/sources/android-21/android/app/Instrumentation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60727274">
+          <caret line="1109" column="21" selection-start-line="1109" selection-start-column="21" selection-end-line="1109" selection-end-column="21" />
+          <folding>
+            <element signature="e#6335#6336#0" expanded="false" />
+            <element signature="e#6363#6364#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/sdk/sources/android-21/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78933334">
+          <caret line="5946" column="24" selection-start-line="5946" selection-start-column="24" selection-end-line="5946" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_map.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/msg_item_right.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/msg_item_left.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chat/MessageInputToolBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="43" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -2605,15 +2596,31 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/chatroom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#7719#8381#0" expanded="true" />
+            <element signature="e#7919#8256#0" expanded="true" />
+            <element signature="e#8255#8256#0" expanded="true" />
+            <element signature="e#8380#8381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/chatroom.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/yoyotrip/GCM/GcmBroadcastReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5241935">
-          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.69320387">
+          <caret line="81" column="77" selection-start-line="81" selection-start-column="77" selection-end-line="81" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

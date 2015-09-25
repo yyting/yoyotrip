@@ -41,10 +41,12 @@ public class chatroom extends ActionBarActivity {
         initMessageInputToolBox();
 
         initListView();
-        if (getIntent()!=null)
+        if (getIntent()!=null&& getIntent().getExtras()!=null)
         {
-
-//            createReplayMsg();
+            Bundle msg_info=getIntent().getExtras();
+            msg_info.getString("message");
+            Message message = new Message(0, 1, msg_info.getString("whofrom"), "avatar", "Jerry", "avatar", msg_info.getString("message"), false, true, new Date());
+            createReplayMsg(message);
         }
 
     }
@@ -183,35 +185,27 @@ public class chatroom extends ActionBarActivity {
     }
 
     //Re:採串接GCM，聊天室完成
-    public void createReplayMsg(Message message){
+    public void createReplayMsg(final Message message){
 
-        final Message reMessage = new Message(message.getType(), 1, message.getFromUserName(), "avatar", "Jerry", "avatar",
-                message.getType() == 0 ? "Re:" + message.getContent() : message.getContent(),
-                false, true, new Date()
-        );
-
-//        new Thread(new Runnable() {
-
-//            @Override
-//            public void run() {
-//                try {
-//                    //Thread.sleep(1000 * (new Random().nextInt(3) +1));
-//                    runOnUiThread(new Runnable() {
-//
-//                        @Override
-//                        public void run() {
-                            msg=getIntent().getSerializableExtra("msg");
-                            adapter.getData().add((Message) msg);
-
+        final Message reMessage = new Message(message.getType(), 1, message.getFromUserName(), "avatar", "Jerry", "avatar",message.getType() == 0 ? message.getContent() : message.getContent(),false, true, new Date());
+          new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    //Thread.sleep(1000 * (new Random().nextInt(3) +1));
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            adapter.getData().add(reMessage);
                             adapter.notifyDataSetChanged();
                             listView.setSelection(listView.getBottom());
-//                        }
-//                    });
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }).start();
+                        }
+                    });
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
 
     }
 

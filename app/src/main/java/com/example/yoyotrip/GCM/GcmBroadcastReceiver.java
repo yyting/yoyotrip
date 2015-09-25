@@ -55,10 +55,12 @@ public class GcmBroadcastReceiver extends WakefulBroadcastReceiver implements Se
 
                     Intent i = new Intent(context, chatroom.class);
                     Bundle bundle=new Bundle();
-                    bundle.putSerializable("msg", message);
+                    bundle.putString("towho","avatar");
+                    bundle.putString("message",extras.getString("message"));
                     i.setAction("android.intent.action.MAIN");
                     i.addCategory("android.intent.category.LAUNCHER");
                     i.putExtras(bundle);
+                    i.putExtras(extras);
 
                     i.setClassName("com.example.yoyotrip", "com.example.yoyotrip.chatroom");
                     i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
