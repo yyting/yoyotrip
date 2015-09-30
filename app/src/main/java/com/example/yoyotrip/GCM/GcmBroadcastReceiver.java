@@ -6,6 +6,7 @@ package com.example.yoyotrip.GCM;
 
 import android.app.Activity;
 import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -30,9 +31,10 @@ import static android.app.PendingIntent.getActivity;
 
 
 
-public class GcmBroadcastReceiver extends WakefulBroadcastReceiver implements Serializable {
+public class GcmBroadcastReceiver extends BroadcastReceiver implements Serializable {
     public static final int NOTIFICATION_ID = 0;
     public Message message;
+    public chatroom add_msg=null;
 
     public void onReceive(Context context, Intent intent) {
         Bundle extras = intent.getExtras();
@@ -56,15 +58,16 @@ public class GcmBroadcastReceiver extends WakefulBroadcastReceiver implements Se
                     Intent i = new Intent(context, chatroom.class);
                     Bundle bundle=new Bundle();
                     bundle.putString("towho","avatar");
-                    bundle.putString("message",extras.getString("message"));
+                    bundle.putString("message", extras.getString("message"));
                     i.setAction("android.intent.action.MAIN");
                     i.addCategory("android.intent.category.LAUNCHER");
                     i.putExtras(bundle);
                     i.putExtras(extras);
-
                     i.setClassName("com.example.yoyotrip", "com.example.yoyotrip.chatroom");
                     i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
                     context.startActivity(i);
+
                     MagicLenGCM.sendLocalNotification(context, NOTIFICATION_ID,
                             R.drawable.icon, "通知", extras
                                     .getString("message"), extras.getString("whofrom"), false,
@@ -89,6 +92,9 @@ public class GcmBroadcastReceiver extends WakefulBroadcastReceiver implements Se
 
         }
         setResultCode(Activity.RESULT_OK);
+    }
+    void setAdd_msg(chatroom main){
+        this.add_msg=main;
     }
 
 

@@ -74,7 +74,7 @@
             </activity>
             <activity
                 android:name=".main"
-                android:label="@string/title_activity_main"
+                android:label="YoYo_trip"
                 android:theme="@style/AppTheme">
                 <intent-filter>
                     <action android:name="android.intent.action.MAIN" />

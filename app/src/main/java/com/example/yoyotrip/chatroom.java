@@ -23,6 +23,12 @@ import com.example.yoyotrip.chat.MessageAdapter;
 import com.example.yoyotrip.chat.MessageInputToolBox;
 import com.example.yoyotrip.chat.OnOperationListener;
 import com.example.yoyotrip.chat.Option;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.UiSettings;
+import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.LatLng;
 
 public class chatroom extends ActionBarActivity {
 
@@ -31,6 +37,10 @@ public class chatroom extends ActionBarActivity {
     public MessageAdapter 		adapter;
     public List<Message> messages ;
     public Serializable msg=null;
+
+    private GoogleMap mMap;
+    private UiSettings uiSettings;
+    final int MARKER_UPDATE_INTERVAL = 1000;
     @SuppressLint("UseSparseArrays")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +48,18 @@ public class chatroom extends ActionBarActivity {
 
         setContentView(R.layout.chatroom);
 
-        initMessageInputToolBox();
+            /**@include googleMaps    **/
+        mMap = ((SupportMapFragment)
+               getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
+        setUpMapIfNeeded();
+        mMap.setTrafficEnabled(false);//顯示交通資訊
+        mMap.setMyLocationEnabled(true);//顯示自己位置
+        uiSettings = mMap.getUiSettings();
+        moveMap(new LatLng(25.086774 - 0.006, 121.565490));
 
+        initMessageInputToolBox();
         initListView();
-        if (getIntent()!=null&& getIntent().getExtras()!=null)
+        if ( getIntent().getExtras()!=null)
         {
             Bundle msg_info=getIntent().getExtras();
             msg_info.getString("message");
@@ -63,13 +81,9 @@ public class chatroom extends ActionBarActivity {
             public void send(String content) {
 
                 System.out.println("===============" + content);
-                int rd = (int) (Math.random() * 99) + 1;
-                Message message = new Message(0, 1, rd % 2 == 1 ? "Tom" : "helen", "avatar", "Jerry", "avatar", content, true, true, new Date());
+                Message message = new Message(0, 1, "helen", "avatar", "Jerry", "avatar", content, true, true, new Date());
                 adapter.getData().add(message);
                 listView.setSelection(listView.getBottom());
-
-                //Just demo
-                createReplayMsg(message);
             }
 
 
@@ -81,8 +95,7 @@ public class chatroom extends ActionBarActivity {
                 adapter.getData().add(message);
                 listView.setSelection(listView.getBottom());
 
-                //Just demo
-                createReplayMsg(message);
+
             }
 
 
@@ -144,18 +157,33 @@ public class chatroom extends ActionBarActivity {
         box.setFunctionData(functionData);
     }
 
+    /**@map function**/
+    //init
+    private void setUpMapIfNeeded(){
+        if (mMap == null){
+            mMap = ((SupportMapFragment)
+                    getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
+
+        }
+    }
+    private void moveMap(LatLng place) {
+        CameraPosition cameraPosition =
+                new CameraPosition.Builder().target(place).zoom(15).build();
+        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+    }
+
 
 
     private void initListView(){
         listView = (ListView) findViewById(R.id.messageListview);
 
         //create Data
-        Message message = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "Hi，大家好我是你們的導遊", true, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 8));
-        Message message1 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "Hello", false ,true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24)* 8));
-        Message message2 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "helen", "avatar", "Jerry", "avatar", "我們要在哪集合??", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 7));
-        Message message3 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "台北車站嗎!?", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 7));
-        Message message4 = new Message(Message.MSG_TYPE_FACE, Message.MSG_STATE_SUCCESS, "Joe", "avatar", "Jerry", "avatar", "big3", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
-        Message message5 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Joe", "avatar", "Jerry", "avatar", "可以在229公園那邊嗎?", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
+        Message message = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "哈囉", true, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 8));
+        Message message1 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "哈囉!", false ,true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24)* 8));
+        Message message2 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "helen", "avatar", "Jerry", "avatar", "導遊你在哪?", true, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 7));
+//        Message message3 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Tom", "avatar", "Jerry", "avatar", "我在你們左邊轉角這哦!", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 7));
+//        Message message4 = new Message(Message.MSG_TYPE_FACE, Message.MSG_STATE_SUCCESS, "Joe", "avatar", "Jerry", "avatar", "", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
+//       Message message5 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SUCCESS, "Joe", "avatar", "Jerry", "avatar", "", false, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
 //        Message message6 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_FAIL, "Tom", "avatar", "Jerry", "avatar", "test send fail", true, false, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
 //        Message message7 = new Message(Message.MSG_TYPE_TEXT, Message.MSG_STATE_SENDING, "Tom", "avatar", "Jerry", "avatar", "test sending", true, true, new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24) * 6));
 
@@ -163,9 +191,9 @@ public class chatroom extends ActionBarActivity {
         messages.add(message);
         messages.add(message1);
         messages.add(message2);
-        messages.add(message3);
-        messages.add(message4);
-        messages.add(message5);
+//        messages.add(message3);
+//        messages.add(message4);
+//        messages.add(message5);
 //        messages.add(message6);
 //        messages.add(message7);
 

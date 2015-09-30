@@ -255,7 +255,7 @@ ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xm
 activity#com.example.yoyotrip.main
 ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:75:13-83:24
 	android:label
-		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:77:17-60
+		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:77:17-42
 	android:theme
 		ADDED from C:\Users\colm\StudioProjects\yoyotrip\app\src\main\AndroidManifest.xml:78:17-48
 	android:name

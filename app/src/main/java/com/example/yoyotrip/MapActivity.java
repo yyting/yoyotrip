@@ -11,6 +11,7 @@ import com.google.android.gms.maps.GoogleMap.InfoWindowAdapter;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
 import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 import com.google.android.gms.maps.GoogleMap.OnMarkerDragListener;
+import com.google.android.gms.maps.GoogleMap.OnMyLocationChangeListener;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -25,12 +26,12 @@ import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.location.Address;
 import android.location.Geocoder;
+import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -55,12 +56,24 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+/**
+ * @author angle
+ *
+ */
+/**
+ * @author angle
+ *
+ */
+/**
+ * @author angle
+ *
+ */
 public class MapActivity extends FragmentActivity {
 
-	private GoogleMap mMap;
-	//private  move;
+	static GoogleMap mMap;
 	final int MARKER_UPDATE_INTERVAL = 1000;
 	Handler handler = new Handler();
+	LatLng myLatLng;
 
 	//按鈕
 	private ImageButton imageButton3;
@@ -72,6 +85,8 @@ public class MapActivity extends FragmentActivity {
 	private List<String> list1 = new ArrayList<String>();
 	private CheckBox checkBox3;
 	private CheckBox checkBox2;
+	private CheckBox checkBox1;
+
 
 	Marker marker;
 
@@ -103,28 +118,6 @@ public class MapActivity extends FragmentActivity {
 
 
 
-
-
-//        icon.setOnClickListener(
-//  				new OnClickListener() {
-//  				    public void onClick(View arg0) {
-//  				    	if (pay.getVisibility()==ImageButton.INVISIBLE)
-//  				      {
-//  				        pay.setVisibility(View.VISIBLE);
-//  				    	group.setVisibility(View.VISIBLE);
-//  				    	plane.setVisibility(View.VISIBLE);
-//  				      }else{
-//  				    	pay.setVisibility(View.INVISIBLE);
-//  				    	group.setVisibility(View.INVISIBLE);
-//  				    	plane.setVisibility(View.INVISIBLE);
-//  				      }
-//  				    	
-//  				    }});
-//        
-
-
-
-
 		mMap = ((SupportMapFragment)
 				getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
 
@@ -138,16 +131,52 @@ public class MapActivity extends FragmentActivity {
 		uiSettings=mMap.getUiSettings();
 
 
-		moveMap(new LatLng(25.086774, 121.565490));
+		mMap.clear();
+		myLatLng = new LatLng(25.086774, 121.565490);
+		mMap.setOnMyLocationChangeListener(new OnMyLocationChangeListener() {
+			@Override
+			public void onMyLocationChange(Location arg) {
+				// TODO Auto-generated method stub
+				myLatLng = new LatLng(arg.getLatitude(),arg.getLongitude());
+
+			}
+		});
 
 
 		//mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);//地圖種類
 		//move.setMyLocationEnabled(new LatLng(25.0419,121.534));
-
+		Bundle bundle = this.getIntent().getExtras();
+		if (!(bundle == null)){
+			if(bundle.getBoolean("marker_show") == true){
+				MarkerOptions markerOpt = new MarkerOptions();
+				String markerOptionString = bundle.getString("markerOptionString");
+				String array[] = markerOptionString.split("&&");
+				markerOpt.position(new LatLng(Double.valueOf(array[0]), Double.valueOf(array[1])));
+				moveMap(new LatLng(Double.valueOf(array[0]),Double.valueOf(array[1])));
+				Log.d("lat", array[0]);
+				Log.d("lng", array[1]);
+				markerOpt.title(array[2]);
+				markerOpt.snippet("人數：" + array[3]);
+				markerOpt.visible(true);
+				markerOpt.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
+				mMap.addMarker(markerOpt);
+			}
+		}
 
 
 		handler.postDelayed(updateMarker, MARKER_UPDATE_INTERVAL);
 	}
+
+
+
+	@Override
+	protected void onResumeFragments() {
+		// TODO Auto-generated method stub
+		super.onResumeFragments();
+		moveMap(myLatLng);
+	}
+
+
 
 	//初始化地圖
 	private void setUpMapIfNeeded(){
@@ -158,7 +187,33 @@ public class MapActivity extends FragmentActivity {
 		}
 	}
 
-
+//	class CMuseumAdapter implements InfoWindowAdapter
+//	{
+//
+//		@Override
+//		public View getInfoContents(Marker m)
+//		{
+//			return null;
+//		}
+//
+//		@Override
+//		public View getInfoWindow(Marker m)
+//		{
+//			View infoWindow = getLayoutInflater().inflate(R.layout.marker, null);
+//			TextView textView3 = (TextView) infoWindow.findViewById(R.id.textView3);
+//			TextView textView1 = (TextView) infoWindow.findViewById(R.id.textView1);
+//			TextView textView2 = (TextView) infoWindow.findViewById(R.id.textView2);
+//			TextView textView4 = (TextView) infoWindow.findViewById(R.id.textView4);
+//			TextView textView5 = (TextView) infoWindow.findViewById(R.id.textView5);
+//
+//			textView3.setText("");
+//			textView1.setText("交通");
+//			textView2.setText("時間");
+//			textView4.setText("景點");
+//			textView5.setText("自我");
+//			return infoWindow;
+//		}
+//	}
 
 
 	//地址轉經緯度
@@ -268,10 +323,11 @@ public class MapActivity extends FragmentActivity {
 	public class AsyncTaskParseJson extends AsyncTask<String, String, String>{
 		String yourJsonStringUrl="http://192.192.140.198/~D10116203/geturl.php";
 		String yourJsonStringUrl2="http://192.192.140.198/~D10116203/geturl2.php";
+		String yourJsonStringUrl3="http://192.192.140.198/~D10116203/geturl4.php";
 
 		JSONArray dataJsonArr =null;
 		JSONArray dataJsonArr2 =null;
-
+		JSONArray dataJsonArr3 =null;
 
 		@Override
 		protected String doInBackground(String... argO) {
@@ -290,7 +346,7 @@ public class MapActivity extends FragmentActivity {
 
 			checkBox3 = (CheckBox) findViewById(R.id.checkBox3);
 			checkBox2 = (CheckBox) findViewById(R.id.checkBox2);
-
+			checkBox1 = (CheckBox) findViewById(R.id.checkBox1);
 
 			checkBox3.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener()
 			{
@@ -384,6 +440,53 @@ public class MapActivity extends FragmentActivity {
 			});
 
 
+			checkBox1.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener()
+			{
+				@Override
+				public void onCheckedChanged(CompoundButton buttonView,boolean isChecked)
+				{
+
+					//判斷CheckBox是否有勾選，同mCheckBox.isChecked()
+					if(isChecked)
+					{
+
+						try {
+							Parser jParser = new Parser();
+							dataJsonArr3= jParser.getJSONAryFromUrl(yourJsonStringUrl3);
+							for(int i=0;i<dataJsonArr3.length();i++){
+								JSONObject c= dataJsonArr3.getJSONObject(i);
+
+								double lng1 = Double.parseDouble(c.getString("lon"));
+								double lat1 = Double.parseDouble(c.getString("lat"));
+								//int sbi1 = Integer.parseInt(c.getString("sbi"));
+								//int tot1 = Integer.parseInt(c.getString("tot"));
+								Log.i("mylog", lat1+","+lng1);
+								MarkerOptions markerOpt = new MarkerOptions();
+								markerOpt.position(new LatLng(lat1, lng1));
+								//mMap.setInfoWindowAdapter(new CMuseumAdapter());
+								markerOpt.title(c.getString("name"));
+								markerOpt.snippet("自我推薦：" +c.getString("license")+"交通：" +c.getString("traffic"));
+								markerOpt.visible(true);
+								markerOpt.icon(BitmapDescriptorFactory.fromResource(R.drawable.pay));
+								mMap.addMarker(markerOpt);
+								//mMap.addMarker(new MarkerOptions().title(c.getString("name")).snippet("地址：" +c.getString("adress") ).position(new LatLng(lat1, lng1)).icon(BitmapDescriptorFactory.fromResource(R.drawable.police)));
+
+							}
+						} catch (JSONException e){
+							e.printStackTrace();
+						}
+
+					}
+					else
+					{
+						mMap.clear();
+						//CheckBox狀態 : 未勾選，隱藏TextView
+						//checkBox1.setVisibility(View.GONE);
+
+					}
+				}
+			});
+
 
 		}
 	}
@@ -405,19 +508,16 @@ public class MapActivity extends FragmentActivity {
 				Intent getmain=new Intent();
 				getmain.setClass(MapActivity.this, TaskActivity.class);
 				startActivity(getmain);
-				MapActivity.this.finish();
 				break;
 			case Menu.FIRST+1:
 				Intent getmain1=new Intent();
 				getmain1.setClass(MapActivity.this, PayStartActivity.class);
 				startActivity(getmain1);
-				MapActivity.this.finish();
 				break;
 			case Menu.FIRST+2:
 				Intent getmain2=new Intent();
 				getmain2.setClass(MapActivity.this, main.class);
 				startActivity(getmain2);
-				MapActivity.this.finish();
 				break;
 		}
 		return super.onOptionsItemSelected(item);
